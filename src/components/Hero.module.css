@@ -1,0 +1,45 @@
+/* --- HERO SECTION --- */
+.hero-section {
+    height: 80vh; /* Takes up most of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 3rem;
+    text-align: center;
+    
+    /* CORE GLASS EFFECT */
+    background: rgba(255, 255, 255, 0.05); /* Very light background */
+    backdrop-filter: blur(15px); /* Stronger blur for the main focus element */
+    -webkit-backdrop-filter: blur(15px);
+    
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    
+    /* Transition for the subtle hover effect */
+    transition: all 0.5s ease-in-out;
+}
+
+/* Subtle 3D lift on hover */
+.hero-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px 0 rgba(0, 0, 0, 0.5);
+    border-color: rgba(140, 255, 0, 0.5); /* Highlight border on hover */
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}

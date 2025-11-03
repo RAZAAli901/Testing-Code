@@ -1,19 +1,16 @@
-import Card from './Card.jsx'
-import Button from './Button/Button.jsx'
-import Student from './Student.jsx';
+// src/App.jsx
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import './components/styles.css'; // This now only loads BODY and GRADIENT background styles
+
 function App() {
-
-
   return (
-    <>
-     <Card/>
-     <Button/>
-     <Student name="Raza Ali" Age={19} Student={true}/>
-     <Student name="Saad H" Age={7} Student={true}/>
-     <Student />
-    </>
-
+    <div className="App">
+      <div className="gradient-bg"></div> 
+      <Navbar />
+      <Hero />
+    </div>
   );
 }
 
-export default App
+export default App;

@@ -1,0 +1,45 @@
+/* --- NAVIGATION BAR --- */
+.navbar {
+    position: sticky; /* Keeps the navbar visible at the top */
+    top: 0;
+    z-index: 10; /* Ensures it is above other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    
+    /* CORE GLASS EFFECT */
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent white background */
+    backdrop-filter: blur(10px); /* The FROSTED GLASS effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari support */
+    
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Light border for definition */
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle 3D lift */
+    margin: 1rem; /* Space around the glass element */
+}
+
+.logo a {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #8cff00; /* Highlight color on hover */
+}
